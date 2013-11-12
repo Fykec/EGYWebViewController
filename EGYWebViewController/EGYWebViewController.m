@@ -24,7 +24,6 @@
 
 - (id)initWithAddress:(NSString*)urlString;
 - (id)initWithURL:(NSURL*)URL;
-- (void)loadURL:(NSURL*)URL;
 
 - (void)updateToolbarItems;
 
@@ -107,6 +106,7 @@
 }
 
 - (void)loadURL:(NSURL *)pageURL {
+    self.URL = pageURL;
     [mainWebView loadRequest:[NSURLRequest requestWithURL:pageURL]];
 }
 

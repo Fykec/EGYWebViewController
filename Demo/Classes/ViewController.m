@@ -13,20 +13,13 @@
 
 @implementation ViewController
 
-// How to push EGYWebViewController
 
-/*- (void)pushWebViewController {
-    NSURL *URL = [NSURL URLWithString:@"http://twitter.com/iMokhles"];
-	EGYWebViewController *webViewController = [[EGYWebViewController alloc] initWithURL:URL];
-	[self.navigationController pushViewController:webViewController animated:YES];
-}
-*/
-
-- (void)presentWebViewController {
-	NSURL *URL = [NSURL URLWithString:@"http://twitter.com/iMokhles"];
-	EGYModalWebViewController *webViewController = [[EGYModalWebViewController alloc] initWithURL:URL];
-	webViewController.modalPresentationStyle = UIModalPresentationPageSheet;
-	[self presentModalViewController:webViewController animated:YES];	
+- (void)viewWillAppear:(BOOL)animated
+{
+    
+    [super viewWillAppear:animated];
+    
+    [self loadURL:[NSURL URLWithString:@"http://news.dbanotes.net/news"]];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

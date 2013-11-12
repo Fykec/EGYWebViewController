@@ -8,9 +8,8 @@
 //  https://github.com/iMokhles/EGYWebViewController
 
 #import <UIKit/UIKit.h>
+#import "EGYWebViewController.h"
 
-@interface ViewController : UIViewController
-
-- (IBAction)presentWebViewController;
+@interface ViewController : EGYWebViewController
 
 @end
