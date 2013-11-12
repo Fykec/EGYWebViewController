@@ -38,6 +38,8 @@
 		4315E66217CED2E300856156 /* ARChromeActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4315E66117CED2E300856156 /* ARChromeActivity.m */; };
 		4315E66517CED36400856156 /* MLCruxActivity.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4315E66717CED36400856156 /* MLCruxActivity.strings */; };
 		9C1A07E31831CB2D00949A0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1A07E21831CB2D00949A0B /* Images.xcassets */; };
+		9C1A07E61831D41D00949A0B /* UIScreen+isTall.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A07E51831D41D00949A0B /* UIScreen+isTall.m */; };
+		9C1A07E81831DB3400949A0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1A07E71831DB3400949A0B /* CoreGraphics.framework */; };
 		D5FA63C516A8707A0087531C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5FA63C416A8707A0087531C /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +108,9 @@
 		4315E66917CED36C00856156 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/MLCruxActivity.strings; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* EGYWeb-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EGYWeb-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		9C1A07E21831CB2D00949A0B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = EGYWeb/Images.xcassets; sourceTree = "<group>"; };
+		9C1A07E41831D41D00949A0B /* UIScreen+isTall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+isTall.h"; sourceTree = "<group>"; };
+		9C1A07E51831D41D00949A0B /* UIScreen+isTall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+isTall.m"; sourceTree = "<group>"; };
+		9C1A07E71831DB3400949A0B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D5FA63C416A8707A0087531C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1A07E81831DB3400949A0B /* CoreGraphics.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				221458A013133B3600ED7D83 /* MessageUI.framework in Frameworks */,
@@ -128,6 +134,8 @@
 			children = (
 				28C286DF0D94DF7D0034E888 /* ViewController.h */,
 				28C286E00D94DF7D0034E888 /* ViewController.m */,
+				9C1A07E41831D41D00949A0B /* UIScreen+isTall.h */,
+				9C1A07E51831D41D00949A0B /* UIScreen+isTall.m */,
 				28F335F01007B36200424DE2 /* ViewController.xib */,
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
@@ -204,6 +212,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C1A07E71831DB3400949A0B /* CoreGraphics.framework */,
 				2214589F13133B3600ED7D83 /* MessageUI.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
@@ -365,6 +374,7 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				9C1A07E61831D41D00949A0B /* UIScreen+isTall.m in Sources */,
 				28C286E10D94DF7D0034E888 /* ViewController.m in Sources */,
 				221C80AF13BBDA2F005F0AB8 /* EGYWebViewController.m in Sources */,
 				22F087701458794B003ECD31 /* EGYModalWebViewController.m in Sources */,
@@ -442,7 +452,7 @@
 				GCC_PREFIX_HEADER = EGYWeb_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "EGYWeb-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = EGYWeb;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,7 +472,7 @@
 				GCC_PREFIX_HEADER = EGYWeb_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "EGYWeb-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = EGYWeb;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

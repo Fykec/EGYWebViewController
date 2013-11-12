@@ -1,7 +1,9 @@
-My Startup News Simple Client
+My [Startup News](http://news.dbanotes.net/news) Simple Client
 ======
+Base On: https://github.com/iMokhles/EGYWebViewController
 
-News From: http://news.dbanotes.net/news
 Icon From: http://dribbble.com/shots/296182-News
+
+Safari Scrolling From: https://github.com/MaxHasADHD/Safari-Scrolling
 
 Thanks All!
